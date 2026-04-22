@@ -5,7 +5,7 @@ def forward():
     y_v = w * x + b
     return y_v
     
-x = torch.arange(16).reshape(4, 4)/15
+x = torch.randn(4, 4)
 y_t = 2 * x + 1
 w = torch.tensor([1.], requires_grad= True)
 b = torch.tensor([0.], requires_grad= True)
